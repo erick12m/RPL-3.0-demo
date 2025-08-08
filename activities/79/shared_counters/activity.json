@@ -1,0 +1,10 @@
+{
+    "category_name": "RUST - Concurrencia",
+    "category_description": "Manejo de uso de estructuras de datos concurrentes",
+    "name": "Contador compartido",
+    "language": "rust",
+    "points": 100,
+    "active": true,
+    "compilation_flags": "",
+    "description": "## Contador compartido\n\nImplementa un contador compartido que pueda ser accedido por múltiples hilos. Utiliza un lock para sincronizar el acceso al contador. ![Rust](https://us1.discourse-cdn.com/flex019/uploads/rust_lang/original/2X/5/5dcb9d1d03cc58bb9bae48fb9cd41355bbefb656.jpg)"
+  }
