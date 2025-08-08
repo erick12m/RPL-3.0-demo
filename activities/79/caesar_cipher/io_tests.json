@@ -2,11 +2,11 @@
     {
       "name": "Cifrado Cesar 1",
       "test_in": "Hola",
-      "test_out": "Lsoe"
+      "test_out": "Lspe"
     },
     {
       "name": "Cifrado Cesar 2",
       "test_in": "Mundo",
-      "test_out": "Qzrit"
+      "test_out": "Rzsit"
     }
 ]  
