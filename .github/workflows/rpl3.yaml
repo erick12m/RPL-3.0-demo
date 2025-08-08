@@ -1,0 +1,21 @@
+name: Upload Activities to RPL 3.0
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  upload-activities:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Required to detect changes
+
+      - name: Upload activities to RPL 3.0
+        uses: erick12m/RPL-3.0-ActivitiesLoader@v1
+        with:
+          rpl_username: ${{ secrets.RPL_USERNAME }}
+          rpl_password: ${{ secrets.RPL_PASSWORD }}
+          activities_dir: activities # The directory containing the activities in the repository

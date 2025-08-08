@@ -1,0 +1,10 @@
+{
+    "category_name": "RUST - Concurrencia",
+    "category_description": "Manejo de estructuras de datos concurrentes y sincronización",
+    "name": "Semáforo en Rust",
+    "language": "rust",
+    "points": 150,
+    "active": true,
+    "compilation_flags": "",
+    "description": "## Implementación de Semáforo\n\nImplementa un semáforo en Rust que permita controlar el acceso concurrente a recursos compartidos. ![Semáforo](https://media.lmneuquen.com/p/6807e816907a617a5d882269918eb909/adjuntos/195/imagenes/007/773/0007773105/770x0/smart/untitled-designpng.png) Un semáforo es una estructura de datos que mantiene un contador que puede ser incrementado o decrementado de manera atómica.\n\n### Funcionalidades requeridas:\n\n1. **Constructor**: Crear un semáforo con un valor inicial específico\n2. **Acquire (wait)**: Decrementar el contador del semáforo. Si el contador es 0, el hilo debe esperar hasta que otro hilo libere el semáforo\n3. **Release (signal)**: Incrementar el contador del semáforo y despertar a un hilo en espera si existe\n4. **Get value**: Obtener el valor actual del contador del semáforo\n\n### Ejemplo de uso:\n```rust\nlet semaphore = Semaphore::new(2); // Semáforo con valor inicial 2\nsemaphore.acquire(); // Decrementa a 1\nsemaphore.acquire(); // Decrementa a 0\nsemaphore.acquire(); // Espera hasta que otro hilo libere\nsemaphore.release(); // Incrementa a 1 y despierta un hilo\n```\n\n**Nota**: Debes usar `std::sync::Condvar` y `std::sync::Mutex` para implementar la sincronización correctamente."
+} 
