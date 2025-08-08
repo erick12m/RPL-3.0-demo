@@ -1,8 +1,5 @@
 {
   "main.rs": {
     "display": "read_write"
-  },
-  "caesar_cipher.rs":{
-    "display": "hidden"
   }
 }

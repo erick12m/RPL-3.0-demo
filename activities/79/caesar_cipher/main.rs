@@ -1,4 +1,4 @@
-use std::io; // Import the standard I/O library
+use std::io;
 mod caesar_cipher;
 
 fn main() {
