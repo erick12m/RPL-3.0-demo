@@ -13,3 +13,4 @@ fn main() {
     let encrypted = shift.encrypt(&user_input);
     println!("{}", encrypted);
 }
+
